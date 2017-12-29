@@ -1,0 +1,10 @@
+{
+  "name": "utapri-search",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "risacan",
+  "license": "MIT",
+  "dependencies": {
+    "vue": "^2.5.13"
+  }
+}

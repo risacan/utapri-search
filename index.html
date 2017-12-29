@@ -1,0 +1,24 @@
+<!doctype html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+
+    <title>${title}</title>
+    <meta name="description" content="${description}" />
+
+    <script src='node_modules/vue/dist/vue.js'></script>
+    <script src='index.js'></script>
+  </head>
+  <body>
+      <div id="demo">
+          <button>hogezaburo</button>
+          <!-- <ul> -->
+            <li v-for='item in items'>{{ item | filterItems }}</li>
+          <!-- </ul> -->
+        </div>
+    </div>
+  </body>
+</html>
