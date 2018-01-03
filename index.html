@@ -14,22 +14,28 @@
   <body>
     <div id="app">
       <ul>
-        <li><button v-on:click="resetSongs">RESET</button></li>
-        <li><button v-on:click="filterSongs('一十木音也')">一十木音也</button></li>
-        <li><button v-on:click="filterSongs('聖川真斗')">聖川真斗</button></li>
-        <li><button v-on:click="filterSongs('四ノ宮那月')">四ノ宮那月</button></li>
-        <li><button v-on:click="filterSongs('一ノ瀬トキヤ')">一ノ瀬トキヤ</button></li>
-        <li><button v-on:click="filterSongs('神宮寺レン')">神宮寺レン</button></li>
-        <li><button v-on:click="filterSongs('来栖翔')">来栖翔</button></li>
-        <li><button v-on:click="filterSongs('愛島セシル')">愛島セシル</button></li>
-        <li><button v-on:click="filterSoloSongs('一十木音也')">一十木音也 Solo</button></li>
-        <li><button v-on:click="filterSoloSongs('聖川真斗')">聖川真斗 Solo</button></li>
-        <li><button v-on:click="filterSoloSongs('四ノ宮那月')">四ノ宮那月 Solo</button></li>
-        <li><button v-on:click="filterSoloSongs('一ノ瀬トキヤ')">一ノ瀬トキヤ Solo</button></li>
-        <li><button v-on:click="filterSoloSongs('神宮寺レン')">神宮寺レン Solo</button></li>
-        <li><button v-on:click="filterSoloSongs('来栖翔')">来栖翔 Solo</button></li>
-        <li><button v-on:click="filterSoloSongs('愛島セシル')">愛島セシル Solo</button></li>
+          <li><input type="checkbox" id="一十木音也" value="一十木音也" v-model="checkedNames"><label for="一十木音也">一十木音也</label></li>
+          <li><input type="checkbox" id="聖川真斗" value="聖川真斗" v-model="checkedNames"><label for="聖川真斗">聖川真斗</label></li>
+          <li><input type="checkbox" id="四ノ宮那月" value="四ノ宮那月" v-model="checkedNames"><label for="四ノ宮那月">四ノ宮那月</label></li>
+          <li><input type="checkbox" id="一ノ瀬トキヤ" value="一ノ瀬トキヤ" v-model="checkedNames"><label for="一ノ瀬トキヤ">一ノ瀬トキヤ</label></li>
+          <li><input type="checkbox" id="神宮寺レン" value="神宮寺レン" v-model="checkedNames"><label for="神宮寺レン">神宮寺レン</label></li>
+          <li><input type="checkbox" id="来栖翔" value="来栖翔" v-model="checkedNames"><label for="来栖翔">来栖翔</label></li>
+          <li><input type="checkbox" id="愛島セシル" value="愛島セシル" v-model="checkedNames"><label for="愛島セシル">愛島セシル</label></li>
+          <li><input type="checkbox" id="寿嶺二" value="寿嶺二" v-model="checkedNames"><label for="寿嶺二">寿嶺二</label></li>
+          <li><input type="checkbox" id="黒崎蘭丸" value="黒崎蘭丸" v-model="checkedNames"><label for="黒崎蘭丸">黒崎蘭丸</label></li>
+          <li><input type="checkbox" id="美風藍" value="美風藍" v-model="checkedNames"><label for="美風藍">美風藍</label></li>
+          <li><input type="checkbox" id="カミュ" value="カミュ" v-model="checkedNames"><label for="カミュ">カミュ</label></li>
+          <li><input type="checkbox" id="鳳瑛一" value="鳳瑛一" v-model="checkedNames"><label for="鳳瑛一">鳳瑛一</label></li>
+          <li><input type="checkbox" id="皇綺羅" value="皇綺羅" v-model="checkedNames"><label for="皇綺羅">皇綺羅</label></li>
+          <li><input type="checkbox" id="帝ナギ" value="帝ナギ" v-model="checkedNames"><label for="帝ナギ">帝ナギ</label></li>
+          <li><input type="checkbox" id="鳳瑛二" value="鳳瑛二" v-model="checkedNames"><label for="鳳瑛二">鳳瑛二</label></li>
+          <li><input type="checkbox" id="桐生院ヴァン" value="桐生院ヴァン" v-model="checkedNames"><label for="桐生院ヴァン">桐生院ヴァン</label></li>
+          <li><input type="checkbox" id="日向大和" value="日向大和" v-model="checkedNames"><label for="日向大和">日向大和</label></li>
+          <li><input type="checkbox" id="天草シオン" value="天草シオン" v-model="checkedNames"><label for="天草シオン">天草シオン</label></li>
+        <li><button v-on:click="filterSongs()">闇に光を</button></li>
+        <li><button v-on:click="resetFilter()">リセット</button></li>
       </ul>
+      <span>CheckedNames: {{ checkedNames }}</span>
       <ul>
         <li v-for="song in songs">
           {{ song.title }}

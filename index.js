@@ -1,29 +1,34 @@
 var app = new Vue({
   el: '#app',
   methods: {
-    filterSongs: function (name) {
-      var masatoSongs = this.songs.filter(function(val,index,ar){
-        if (val.singers.includes(name)) {
-          return val;
-        }
-      });
-      this.songs = masatoSongs;
-    },
-    filterSoloSongs: function (name) {
-      var masatoSongs = this.songs.filter(function(val,index,ar){
-        if (val.singers == name) {
-          return val;
-        }
-      });
-      this.songs = masatoSongs;
-    },
-    resetSongs: function() {
+    resetFilter: function() {
       this.songs = utapri;
+    },
+    filterSongs: function(){
+      var allSongs = utapri;
+      var filteredSongs = [];
+      var checkedNames = this.checkedNames;
+      allSongs.forEach(function(val) {
+        // checkedNames.forEach(function(name){
+        //   if (val.singers.includes(name)) {
+        //     if(!filteredSongs.includes(val)){
+        //       filteredSongs.push(val)
+        //     }
+        //   }
+        // })
+        var baseLength = val.singers.length;
+        var diffLength = diffArray(val.singers, checkedNames).length;
+        if (diffLength == baseLength - checkedNames.length) {
+          filteredSongs.push(val);
+        }
+      });
+      this.songs = filteredSongs;
     }
   },
   data: {
     songs: {},
-    princes: {}
+    princes: {},
+    checkedNames: []
   }
 })
 
@@ -1461,16 +1466,19 @@ var utapri = [
     ]
   }
 ]
-
-var princes = [
-  "一十木音也",
-  "聖川真斗",
-  "四ノ宮那月",
-  "一ノ瀬トキヤ",
-  "神宮寺レン",
-  "来栖翔",
-  "愛島セシル"
-]
-
 app.songs = utapri;
-app.princes = princes;
+
+function diffArray(arr1, arr2) {
+  var newArr = [];
+  for(var a = 0 ; a < arr1.length; a++){
+    if(arr2.indexOf(arr1[a]) === -1 ){
+      newArr.push(arr1[a]);
+    }
+  }
+  for(var b = 0; b < arr2.length; b++){
+    if(arr1.indexOf(arr2[b]) === -1 ){
+       newArr.push(arr2[b]);
+       }
+  }
+  return newArr;
+}
