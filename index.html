@@ -6,19 +6,36 @@
     <meta name="viewport" content="width=device-width, user-scalable=no" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
 
-    <title>${title}</title>
+    <title></title>
     <meta name="description" content="${description}" />
 
     <script src='node_modules/vue/dist/vue.js'></script>
-    <script src='index.js'></script>
   </head>
   <body>
-      <div id="demo">
-          <button>hogezaburo</button>
-          <!-- <ul> -->
-            <li v-for='item in items'>{{ item | filterItems }}</li>
-          <!-- </ul> -->
-        </div>
+    <div id="app">
+      <ul>
+        <li><button v-on:click="resetSongs">RESET</button></li>
+        <li><button v-on:click="filterSongs('一十木音也')">一十木音也</button></li>
+        <li><button v-on:click="filterSongs('聖川真斗')">聖川真斗</button></li>
+        <li><button v-on:click="filterSongs('四ノ宮那月')">四ノ宮那月</button></li>
+        <li><button v-on:click="filterSongs('一ノ瀬トキヤ')">一ノ瀬トキヤ</button></li>
+        <li><button v-on:click="filterSongs('神宮寺レン')">神宮寺レン</button></li>
+        <li><button v-on:click="filterSongs('来栖翔')">来栖翔</button></li>
+        <li><button v-on:click="filterSongs('愛島セシル')">愛島セシル</button></li>
+        <li><button v-on:click="filterSoloSongs('一十木音也')">一十木音也 Solo</button></li>
+        <li><button v-on:click="filterSoloSongs('聖川真斗')">聖川真斗 Solo</button></li>
+        <li><button v-on:click="filterSoloSongs('四ノ宮那月')">四ノ宮那月 Solo</button></li>
+        <li><button v-on:click="filterSoloSongs('一ノ瀬トキヤ')">一ノ瀬トキヤ Solo</button></li>
+        <li><button v-on:click="filterSoloSongs('神宮寺レン')">神宮寺レン Solo</button></li>
+        <li><button v-on:click="filterSoloSongs('来栖翔')">来栖翔 Solo</button></li>
+        <li><button v-on:click="filterSoloSongs('愛島セシル')">愛島セシル Solo</button></li>
+      </ul>
+      <ul>
+        <li v-for="song in songs">
+          {{ song.title }}
+        </li>
+      </ul>
     </div>
+    <script src='index.js'></script>
   </body>
 </html>
