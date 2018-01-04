@@ -3,19 +3,13 @@ var app = new Vue({
   methods: {
     resetFilter: function() {
       this.songs = utapri;
+      this.checkedNames = [];
     },
     filterSongs: function(){
       var allSongs = utapri;
       var filteredSongs = [];
       var checkedNames = this.checkedNames;
       allSongs.forEach(function(val) {
-        // checkedNames.forEach(function(name){
-        //   if (val.singers.includes(name)) {
-        //     if(!filteredSongs.includes(val)){
-        //       filteredSongs.push(val)
-        //     }
-        //   }
-        // })
         var baseLength = val.singers.length;
         var diffLength = diffArray(val.singers, checkedNames).length;
         if (diffLength == baseLength - checkedNames.length) {
@@ -27,7 +21,6 @@ var app = new Vue({
   },
   data: {
     songs: {},
-    princes: {},
     checkedNames: []
   }
 })
