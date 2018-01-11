@@ -14,74 +14,79 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
     <script src='node_modules/vue/dist/vue.js'></script>
     <link rel="stylesheet" href="index.css">
+    <!--And a clean, simple sans typeface-->
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,700" rel="stylesheet">
+    <!--A nice, sober serif typeface-->
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400,400i,700,700i" rel="stylesheet">
+    <!-- Also a classy monospace typeface for all you nerds -->
+    <link href="https://fonts.googleapis.com/css?family=Space+Mono:400,700" rel="stylesheet">
+
+    <!--  This will import all the necessary files in one go  -->
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+
+    <script src="js/smoothscroll.js"></script>
+
+    <script>
+        smoothScroll.init({
+            speed: 500,
+            easing: 'easeInOutQuint',
+            offset: 50
+        });
+    </script>
   </head>
   <body>
-    <div id="app">
-      <div>
-        <div class="row justify-content-md-center mt-md-3">
-          <h1 class="display-4">うたプリサーチ</h1>
-        </div>
-      </div>
-      <div class="row justify-content-md-center mt-md-3">
+    <div id="app" class="all-content margin-top-small">
+      <h1 class="text-center">Utapri Search</h1>
+      <div class="characters text-center">
         <div class="btn-group btn-group-toggle">
-          <label class="btn btn-secondary" for="一十木音也"><input type="checkbox" id="一十木音也" value="一十木音也" v-model="checkedNames">一十木音也</label>
-          <label class="btn btn-secondary" for="聖川真斗"><input type="checkbox" id="聖川真斗" value="聖川真斗" v-model="checkedNames">聖川真斗</label>
-          <label class="btn btn-secondary" for="四ノ宮那月"><input type="checkbox" id="四ノ宮那月" value="四ノ宮那月" v-model="checkedNames">四ノ宮那月</label>
-          <label class="btn btn-secondary" for="一ノ瀬トキヤ"><input type="checkbox" id="一ノ瀬トキヤ" value="一ノ瀬トキヤ" v-model="checkedNames">一ノ瀬トキヤ</label>
-          <label class="btn btn-secondary" for="神宮寺レン"><input type="checkbox" id="神宮寺レン" value="神宮寺レン" v-model="checkedNames">神宮寺レン</label>
-          <label class="btn btn-secondary" for="来栖翔"><input type="checkbox" id="来栖翔" value="来栖翔" v-model="checkedNames">来栖翔</label>
-          <label class="btn btn-secondary" for="愛島セシル"><input type="checkbox" id="愛島セシル" value="愛島セシル" v-model="checkedNames">愛島セシル</label>
+          <div class="row">
+            <label class="ff-button shape-curved bordered" for="一十木音也"><input class="checkbox" type="checkbox" id="一十木音也" value="一十木音也" v-model="checkedNames">一十木音也</label>
+            <label class="ff-button shape-curved bordered" for="聖川真斗"><input type="checkbox" id="聖川真斗" value="聖川真斗" v-model="checkedNames">聖川真斗</label>
+            <label class="ff-button shape-curved bordered" for="四ノ宮那月"><input type="checkbox" id="四ノ宮那月" value="四ノ宮那月" v-model="checkedNames">四ノ宮那月</label>
+            <label class="ff-button shape-curved bordered" for="一ノ瀬トキヤ"><input type="checkbox" id="一ノ瀬トキヤ" value="一ノ瀬トキヤ" v-model="checkedNames">一ノ瀬トキヤ</label>
+            <label class="ff-button shape-curved bordered" for="神宮寺レン"><input type="checkbox" id="神宮寺レン" value="神宮寺レン" v-model="checkedNames">神宮寺レン</label>
+            <label class="ff-button shape-curved bordered" for="来栖翔"><input type="checkbox" id="来栖翔" value="来栖翔" v-model="checkedNames">来栖翔</label>
+            <label class="ff-button shape-curved bordered" for="愛島セシル"><input type="checkbox" id="愛島セシル" value="愛島セシル" v-model="checkedNames">愛島セシル</label>
+            <label class="ff-button shape-curved bordered" for="寿嶺二"><input type="checkbox" id="寿嶺二" value="寿嶺二" v-model="checkedNames">寿嶺二</label>
+            <label class="ff-button shape-curved bordered" for="黒崎蘭丸"><input type="checkbox" id="黒崎蘭丸" value="黒崎蘭丸" v-model="checkedNames">黒崎蘭丸</label>
+            <label class="ff-button shape-curved bordered" for="美風藍"><input type="checkbox" id="美風藍" value="美風藍" v-model="checkedNames">美風藍</label>
+            <label class="ff-button shape-curved bordered" for="カミュ"><input type="checkbox" id="カミュ" value="カミュ" v-model="checkedNames">カミュ</label>
+            <label class="ff-button shape-curved bordered" for="鳳瑛一"><input type="checkbox" id="鳳瑛一" value="鳳瑛一" v-model="checkedNames">鳳瑛一</label>
+            <label class="ff-button shape-curved bordered" for="皇綺羅"><input type="checkbox" id="皇綺羅" value="皇綺羅" v-model="checkedNames">皇綺羅</label>
+            <label class="ff-button shape-curved bordered" for="帝ナギ"><input type="checkbox" id="帝ナギ" value="帝ナギ" v-model="checkedNames">帝ナギ</label>
+            <label class="ff-button shape-curved bordered" for="鳳瑛二"><input type="checkbox" id="鳳瑛二" value="鳳瑛二" v-model="checkedNames">鳳瑛二</label>
+            <label class="ff-button shape-curved bordered" for="桐生院ヴァン"><input type="checkbox" id="桐生院ヴァン" value="桐生院ヴァン" v-model="checkedNames">桐生院ヴァン</label>
+            <label class="ff-button shape-curved bordered" for="日向大和"><input type="checkbox" id="日向大和" value="日向大和" v-model="checkedNames">日向大和</label>
+            <label class="ff-button shape-curved bordered" for="天草シオン"><input type="checkbox" id="天草シオン" value="天草シオン" v-model="checkedNames">天草シオン</label>
+          </div>
         </div>
-      </div>
-      <div class="row justify-content-md-center mt-md-3">
-        <div class="btn-group btn-group-toggle">
-          <label class="btn btn-secondary" for="寿嶺二"><input type="checkbox" id="寿嶺二" value="寿嶺二" v-model="checkedNames">寿嶺二</label>
-          <label class="btn btn-secondary" for="黒崎蘭丸"><input type="checkbox" id="黒崎蘭丸" value="黒崎蘭丸" v-model="checkedNames">黒崎蘭丸</label>
-          <label class="btn btn-secondary" for="美風藍"><input type="checkbox" id="美風藍" value="美風藍" v-model="checkedNames">美風藍</label>
-          <label class="btn btn-secondary" for="カミュ"><input type="checkbox" id="カミュ" value="カミュ" v-model="checkedNames">カミュ</label>
+        <div class="row text-center">
+          <button v-on:click="resetFilter()" type="button" class="ff-button bg-none">リセット</button>
+          <button v-on:click="filterSongs()" type="button" class="ff-button shape-rounded bg-blue shadow-hard">闇に光を</button>
         </div>
+
+
+
       </div>
-      <div class="row justify-content-md-center mt-md-3">
-        <div class="btn-group btn-group-toggle">
-          <label class="btn btn-secondary" for="鳳瑛一"><input type="checkbox" id="鳳瑛一" value="鳳瑛一" v-model="checkedNames">鳳瑛一</label>
-          <label class="btn btn-secondary" for="皇綺羅"><input type="checkbox" id="皇綺羅" value="皇綺羅" v-model="checkedNames">皇綺羅</label>
-          <label class="btn btn-secondary" for="帝ナギ"><input type="checkbox" id="帝ナギ" value="帝ナギ" v-model="checkedNames">帝ナギ</label>
-          <label class="btn btn-secondary" for="鳳瑛二"><input type="checkbox" id="鳳瑛二" value="鳳瑛二" v-model="checkedNames">鳳瑛二</label>
-          <label class="btn btn-secondary" for="桐生院ヴァン"><input type="checkbox" id="桐生院ヴァン" value="桐生院ヴァン" v-model="checkedNames">桐生院ヴァン</label>
-          <label class="btn btn-secondary" for="日向大和"><input type="checkbox" id="日向大和" value="日向大和" v-model="checkedNames">日向大和</label>
-          <label class="btn btn-secondary" for="天草シオン"><input type="checkbox" id="天草シオン" value="天草シオン" v-model="checkedNames">天草シオン</label>
-        </div>
+      <div class="row text-center">
+        <span v-for="name in checkedNames">{{ name }} </span>
       </div>
-      <div class="row justify-content-md-center mt-md-3">
-        <button v-on:click="resetFilter()" type="button" class="btn btn-lg">リセット</button>
-        <button v-on:click="filterSongs()" type="button" class="btn btn-primary btn-lg">闇に光を</button>
-      </div>
-      <div class="card mt-md-3">
-        <div class="card-body">
-          <span v-for="name in checkedNames">{{ name }} </span>
-        </div>
-      </div>
-      <div class="mt-md-3">
         <div class="row">
-          <div class="col-sm-6" v-for="song in songs">
-            <div class="row card">
-              <div class="col-sm-6"><img class="" src="http://www.utapri.com/resource/img/jk/cd/QECB1080.jpg"></div>
-              <div class="col-sm-6">
-                <div class="card-body">
-                  <h5 class="card-title">{{ song.title }}</h5>
-                  <p class="card-subtitle mb-2 text-muted">{{ song.album }}</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
+          <div class="card portion half no-padding" v-for="song in songs">
+            <div class="row vertical-centre-items no-margin padding-all-tiny">
+              <div class="portion half no-margin img-wrap">
+                <img class="img" src="http://www.utapri.com/resource/img/jk/cd/QECB1080.jpg">
+              </div>
+              <div class="portion half">
+                  <h5>{{ song.title }}</h5>
+                  <p>{{ song.album }}</p>
+                  <button href="#" class="ff-button bg-blue">Go somewhere</button>
                 </div>
               </div>
             </div>
-            <!-- <div class="card media"> -->
-
-
-            <!-- </div> -->
           </div>
         </div>
       </div>
-    </div>
     <script src='index.js'></script>
   </body>
 </html>

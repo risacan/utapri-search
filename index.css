@@ -12,3 +12,22 @@
   padding-right: 1em;
   margin-bottom: -1.25em;
 }
+
+.characters {
+  padding: 6px;
+}
+
+label {
+  margin: 6px;
+}
+
+.app {
+  height: 100%;       /* 1 */
+}
+
+.img-wrap {
+  height: 100%;
+}
+.img {
+  margin: auto;
+}
