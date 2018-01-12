@@ -31,3 +31,7 @@ label {
 .img {
   margin: auto;
 }
+
+.active {
+  background-color: black;
+}

@@ -40,7 +40,7 @@
       <div class="characters text-center">
         <div class="btn-group btn-group-toggle">
           <div class="row">
-            <label class="ff-button shape-curved bordered" for="一十木音也"><input class="checkbox" type="checkbox" id="一十木音也" value="一十木音也" v-model="checkedNames">一十木音也</label>
+            <label class="ff-button shape-curved bordered" for="一十木音也"><input v-on:click="changeColor()" class="checkbox" type="checkbox" id="一十木音也" value="一十木音也" v-model="checkedNames">一十木音也</label>
             <label class="ff-button shape-curved bordered" for="聖川真斗"><input type="checkbox" id="聖川真斗" value="聖川真斗" v-model="checkedNames">聖川真斗</label>
             <label class="ff-button shape-curved bordered" for="四ノ宮那月"><input type="checkbox" id="四ノ宮那月" value="四ノ宮那月" v-model="checkedNames">四ノ宮那月</label>
             <label class="ff-button shape-curved bordered" for="一ノ瀬トキヤ"><input type="checkbox" id="一ノ瀬トキヤ" value="一ノ瀬トキヤ" v-model="checkedNames">一ノ瀬トキヤ</label>
@@ -75,7 +75,7 @@
           <div class="card portion half no-padding" v-for="song in songs">
             <div class="row vertical-centre-items no-margin padding-all-tiny">
               <div class="portion half no-margin img-wrap">
-                <img class="img" src="http://www.utapri.com/resource/img/jk/cd/QECB1080.jpg">
+                <img class="img" v-bind:src="'/Users/risacan/projects/useful/find-images-with-sentence/img/' + song.album.replace(/\//g, '_') + '.jpg'">
               </div>
               <div class="portion half">
                   <h5>{{ song.title }}</h5>
