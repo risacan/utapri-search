@@ -33,5 +33,6 @@ label {
 }
 
 .active {
-  background-color: black;
+  background: #ffa98f !important;
+  color: #ffffff !important;
 }

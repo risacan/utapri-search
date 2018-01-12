@@ -19,13 +19,14 @@ var app = new Vue({
       this.songs = filteredSongs;
     },
     changeColor: function(){
-      console.log("HOGEEE")
+      var eventElement = event.srcElement;
+      var eventLabel = eventElement.parentNode;
+      eventLabel.classList.toggle("active");
     }
   },
   data: {
     songs: {},
-    checkedNames: [],
-    isActive: false
+    checkedNames: []
   }
 })
 
