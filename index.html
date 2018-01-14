@@ -71,7 +71,7 @@
           <div class="card portion half no-padding" v-for="song in songs">
             <div class="row vertical-centre-items no-margin padding-all-tiny">
               <div class="portion half no-margin img-wrap">
-                <img class="img" v-bind:src="'./images/jackets/' + song.album.replace(/\//g, '_') + '.jpg'">
+                <img class="img" v-bind:src="'./images/jackets/' +  encodeURI(song.album.replace(/\//g, '_')) + '.jpg'">
               </div>
               <div class="portion half">
                   <h5>{{ song.title }}</h5>
