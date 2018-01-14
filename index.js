@@ -1,3 +1,4 @@
+Vue.config.devtools = true;
 var app = new Vue({
   el: '#app',
   methods: {
@@ -8,19 +9,40 @@ var app = new Vue({
       Array.prototype.forEach.call(allLabels, function(item) {
         item.classList.remove("active");
       });
+      this.checked = false;
     },
     filterSongs: function(){
       var allSongs = utapri;
       var filteredSongs = [];
       var checkedNames = this.checkedNames;
-      allSongs.forEach(function(val) {
-        var baseLength = val.singers.length;
-        var diffLength = diffArray(val.singers, checkedNames).length;
-        if (diffLength == baseLength - checkedNames.length) {
-          filteredSongs.push(val);
-        }
-      });
-      this.songs = filteredSongs;
+      if(this.checked === true) {
+        var selectedSingers = checkedNames.sort(function(a,b) {
+          if( a < b ) return -1;
+          if( a > b ) return 1;
+          return 0;
+        });
+        allSongs.forEach(function(val) {
+          var sortedSingers = val.singers.sort(function(a,b) {
+            if( a < b ) return -1;
+            if( a > b ) return 1;
+            return 0;
+          })
+          console.log(sortedSingers.toString)
+          if (selectedSingers.toString() == sortedSingers.toString()) {
+            filteredSongs.push(val)
+          }
+        });
+        this.songs = filteredSongs;
+      } else {
+        allSongs.forEach(function(val) {
+          var baseLength = val.singers.length;
+          var diffLength = diffArray(val.singers, checkedNames).length;
+          if (diffLength == baseLength - checkedNames.length) {
+            filteredSongs.push(val);
+          }
+        });
+        this.songs = filteredSongs;
+      }
     },
     changeColor: function(){
       var eventElement = event.srcElement;
@@ -30,7 +52,8 @@ var app = new Vue({
   },
   data: {
     songs: {},
-    checkedNames: []
+    checkedNames: [],
+    checked: false
   }
 })
 

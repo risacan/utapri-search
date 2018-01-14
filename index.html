@@ -62,6 +62,10 @@
         <div class="row text-center">
           <button v-on:click="resetFilter()" type="button" class="ff-button bg-none">リセット</button>
           <button v-on:click="filterSongs()" type="button" class="ff-button shape-rounded bg-blue shadow-hard">闇に光を</button>
+          <div class="ff-checkbox">
+            <input type="checkbox" id="checkbox" v-model="checked">
+            <label class="ff-checkbox-label" for="checkbox"></label>Solo?
+          </div>
         </div>
 
 
