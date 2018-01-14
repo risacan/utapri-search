@@ -4,6 +4,10 @@ var app = new Vue({
     resetFilter: function() {
       this.songs = utapri;
       this.checkedNames = [];
+      var allLabels = document.getElementsByTagName("label");
+      Array.prototype.forEach.call(allLabels, function(item) {
+        item.classList.remove("active");
+      });
     },
     filterSongs: function(){
       var allSongs = utapri;
