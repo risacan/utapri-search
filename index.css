@@ -30,6 +30,9 @@ label {
 }
 .img {
   margin: auto;
+  width: 250;
+  height: 250px;
+  object-fit: contain;
 }
 
 .active {
