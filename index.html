@@ -33,6 +33,7 @@
             offset: 50
         });
     </script>
+    <script type='text/javascript'>var _merchantSettings=_merchantSettings || [];_merchantSettings.push(['AT', '1001lIWY']);(function(){var autolink=document.createElement('script');autolink.type='text/javascript';autolink.async=true; autolink.src= ('https:' == document.location.protocol) ? 'https://autolinkmaker.itunes.apple.com/js/itunes_autolinkmaker.js' : 'http://autolinkmaker.itunes.apple.com/js/itunes_autolinkmaker.js';var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(autolink, s);})();</script>
   </head>
   <body>
     <div id="app" class="all-content margin-top-small">
@@ -81,8 +82,7 @@
               <div class="portion half">
                   <h5>{{ song.title }}</h5>
                   <p>{{ song.album }}</p>
-                  <button href="#" class="ff-button bg-blue">Go somewhere</button>
-                </div>
+                  <a v-bind:href="encodeURI(song.itunes)" v-bind:class="song.itunes == null ? 'hide' : null"><button class="ff-button bg-blue" target="_blank">iTunesで購入</button></a>
               </div>
             </div>
           </div>
