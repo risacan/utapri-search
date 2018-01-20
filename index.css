@@ -39,3 +39,7 @@ label {
   background: #ffa98f !important;
   color: #ffffff !important;
 }
+
+.hide {
+  display: none;
+}
