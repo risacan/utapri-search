@@ -85,7 +85,8 @@ var utapri = [
       "四ノ宮那月",
       "寿嶺二",
       "黒崎蘭丸"
-    ]
+    ],
+    "itunes": "https://itunes.apple.com/jp/album/lost-alice/1325946120?i=1325946455&uo=4"
   },
   {
     "title": "Shining☆Romance",
