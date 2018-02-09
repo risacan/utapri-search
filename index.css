@@ -43,3 +43,94 @@ label {
 .hide {
   display: none;
 }
+
+.hidari-container {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 5px;
+}
+
+.hidari-item {
+  flex-basis: auto;
+  flex-grow: 1;
+}
+
+.img-wrap img {
+  margin-left: 23px;
+}
+
+.一十木音也 {
+  background-color: #E42932;
+}
+
+.四ノ宮那月 {
+  background-color: #FBC73F;
+}
+
+.聖川真斗 {
+  background-color: #315BA5;
+}
+
+.一ノ瀬トキヤ {
+  background-color: #513F89;
+}
+
+.来栖翔 {
+  background-color: #E86378;
+}
+
+.神宮寺レン {
+  background-color: #EB6E1D;
+}
+
+.愛島セシル {
+  background-color: #9EC72D;
+}
+
+.鳳瑛一 {
+  background-color: #E42932;
+}
+
+.皇綺羅 {
+  background-color: #315BA5;
+}
+
+.帝ナギ {
+  background-color: #FBC73F;
+}
+
+.鳳瑛二 {
+  background-color: #513F89;
+}
+
+.桐生院ヴァン {
+  background-color: #EB6E1D;
+}
+
+.日向大和 {
+  background-color: #E86378;
+}
+
+.天草シオン {
+  background-color: #9EC72D;
+}
+
+.寿嶺二 {
+  background-color: #5FB876;
+}
+
+.黒崎蘭丸 {
+  background-color: #8F2033;
+}
+
+.カミュ {
+  background-color:#B7E1F7;
+}
+
+.美風藍 {
+  background-color: #BB9AC5;
+}
