@@ -62,7 +62,8 @@ var utapri = [
     "title": "リコリスの森",
     "album": "うたの☆プリンスさまっ♪Shining Masterpiece Show「リコリスの森」",
     "singers": ["一十木音也", "一ノ瀬トキヤ", "神宮寺レン", "愛島セシル"],
-    "date": "2018-02-28"
+    "date": "2018-02-28",
+    "itunes": "https://itunes.apple.com/jp/album/%E3%81%86%E3%81%9F%E3%81%AE-%E3%83%97%E3%83%AA%E3%83%B3%E3%82%B9%E3%81%95%E3%81%BE%E3%81%A3-shining-masterpiece-show-%E3%83%AA%E3%82%B3%E3%83%AA%E3%82%B9%E3%81%AE%E6%A3%AE-single/1351648098"
   }, {
     "title": "ウルトラブラスト",
     "album": "ウルトラブラスト",
