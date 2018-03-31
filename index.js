@@ -82,7 +82,7 @@ var utapri = [
     "album": "うたの☆プリンスさまっ♪Shining Masterpiece Show「トロワ－剣と絆の物語－」",
     "singers": ["来栖翔", "美風藍", "カミュ"],
     "date": "2018-02-07",
-    "itunes": "https://itunes.apple.com/jp/album/%E3%81%86%E3%81%9F%E3%81%AE-%E3%83%97%E3%83%AA%E3%83%B3%E3%82%B9%E3%81%95%E3%81%BE%E3%81%A3-shining-masterpiece-show-%E3%83%88%E3%83%AD%E3%83%AF-%E5%89%A3%E3%81%A8%E7%B5%86%E3%81%AE%E7%89%A9%E8%AA%9E-single/1342532737?i=1342534217&uo=4"
+    "itunes": "https://itunes.apple.com/jp/album/%E3%81%86%E3%81%9F%E3%81%AE-%E3%83%97%E3%83%AA%E3%83%B3%E3%82%B9%E3%81%95%E3%81%BE%E3%81%A3-shining-masterpiece-show-%E3%83%88%E3%83%AD%E3%83%AF-%E5%89%A3%E3%81%A8%E7%B5%86%E3%81%AE%E7%89%A9%E8%AA%9E-single/"
   }, {
     "title": "Lost Alice",
     "album": "うたの☆プリンスさまっ♪Shining Masterpiece Show「Lost Alice」",
