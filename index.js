@@ -59,6 +59,20 @@ var app = new Vue({
 
 var utapri = [
   {
+    "title": "FLY TO THE FUTURE",
+    "album": "FLY TO THE FUTURE",
+    "singers": ["寿嶺二", "黒崎蘭丸", "美風藍", "カミュ"],
+    "group": "QUARTET NIGHT",
+    "date": "2018-08-01"
+  },
+  {
+    "title": "THE WORLD IS MINE",
+    "album": "FLY TO THE FUTURE",
+    "singers": ["寿嶺二", "黒崎蘭丸", "美風藍", "カミュ"],
+    "group": "QUARTET NIGHT",
+    "date": "2018-08-01"
+  },
+  {
     "title": "リコリスの森",
     "album": "うたの☆プリンスさまっ♪Shining Masterpiece Show「リコリスの森」",
     "singers": ["一十木音也", "一ノ瀬トキヤ", "神宮寺レン", "愛島セシル"],
