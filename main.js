@@ -57,7 +57,6 @@ var app = new Vue({
   }
 });
 
-var utapri = require("./utapri.js");
 app.songs = utapri;
 
 function diffArray(arr1, arr2) {

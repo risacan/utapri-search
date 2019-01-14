@@ -124,13 +124,14 @@
               <div class="portion half">
                   <h5><strong>{{ song.title }}</strong></h5>
                   <!-- <p><span>{{ song.date}}</span></p> -->
-                  <p class="text-tiny">{{ song.album }}</p>
+                  <p class="text-tiny">{{ song.album }} <br>{{ new Date(song.date).toLocaleDateString("ja-JP") }}</p>
                   <a v-bind:href="encodeURI(song.itunes)" v-bind:class="song.itunes == null ? 'hide' : null"><button class="ff-button bg-blue" target="_blank">iTunesで購入</button></a>
               </div>
             </div>
           </div>
         </div>
       </div>
-    <script src='index.js'></script>
+    <script src='utapri.js'></script>
+    <script src='main.js'></script>
   </body>
 </html>

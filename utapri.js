@@ -1,17 +1,111 @@
-module.exports.utapri = [
+var utapri = [
+  {
+    title: "雪月花",
+    album: "Eternal Song CD",
+    singers: [
+      "一十木音也",
+      "聖川真斗",
+      "四ノ宮那月",
+      "一ノ瀬トキヤ",
+      "神宮寺レン",
+      "来栖翔",
+      "愛島セシル",
+      "寿嶺二",
+      "黒崎蘭丸",
+      "美風藍",
+      "カミュ"
+    ],
+    date: "2018-11-21"
+  },
+  {
+    title: "カレイドスコープ",
+    album:
+      "劇場版 うたの☆プリンスさまっ♪ マジLOVEキングダムスペシャルユニットドラマCD トキヤ・セシル・大和",
+    singers: ["一ノ瀬トキヤ", "愛島セシル", "日向大和"],
+    date: "2019-02-27"
+  },
+  {
+    title: "Colorfully☆Spark",
+    album:
+      "劇場版 うたの☆プリンスさまっ♪ マジLOVEキングダムスペシャルユニットドラマCD 翔・ナギ・シオン",
+    singers: ["来栖翔", "帝ナギ", "鳳瑛二"],
+    date: "2019-02-13"
+  },
+  {
+    title: "Feather in the hand",
+    album:
+      "劇場版 うたの☆プリンスさまっ♪ マジLOVEキングダムスペシャルユニットドラマCD 真斗・カミュ・瑛二",
+    singers: ["聖川真斗", "カミュ", "鳳瑛二"],
+    date: "2019-01-16"
+  },
+  {
+    title: "相愛トロイメライ",
+    album:
+      "劇場版 うたの☆プリンスさまっ♪ マジLOVEキングダムスペシャルユニットドラマCD レン・嶺二・綺羅",
+    singers: ["神宮寺レン", "寿嶺二", "皇綺羅"],
+    date: "2019-01-30"
+  },
+  {
+    title: "エゴイスティック",
+    album:
+      "劇場版 うたの☆プリンスさまっ♪ マジLOVEキングダムスペシャルユニットドラマCD 那月・蘭丸・瑛一",
+    singers: ["四ノ宮那月", "鳳瑛一", "黒崎蘭丸"],
+    date: "2018-12-26"
+  },
+  {
+    title: "Up-Down-Up!",
+    album:
+      "劇場版 うたの☆プリンスさまっ♪ マジLOVEキングダムスペシャルユニットドラマCD 音也・藍・ヴァン",
+    singers: ["一十木音也", "美風藍", "桐生院ヴァン"],
+    date: "2018-12-12"
+  },
+  {
+    title: "アンセム フォー ジ エンジェル",
+    album: "うたの☆プリンスさまっ♪ HE★VENSミニアルバム",
+    singers: [
+      "鳳瑛一",
+      "皇綺羅",
+      "帝ナギ",
+      "鳳瑛二",
+      "桐生院ヴァン",
+      "日向大和",
+      "天草シオン"
+    ],
+    group: "HE★VENS",
+    date: "2019-03-13"
+  },
+  {
+    title: "愛を捧げよ 〜the secret Shangri-la〜",
+    album: "愛を捧げよ 〜the secret Shangri-la〜",
+    singers: [
+      "鳳瑛一",
+      "皇綺羅",
+      "帝ナギ",
+      "鳳瑛二",
+      "桐生院ヴァン",
+      "日向大和",
+      "天草シオン"
+    ],
+    group: "HE★VENS",
+    date: "2019-04-03"
+  },
   {
     title: "FLY TO THE FUTURE",
     album: "FLY TO THE FUTURE",
     singers: ["寿嶺二", "黒崎蘭丸", "美風藍", "カミュ"],
     group: "QUARTET NIGHT",
-    date: "2018-08-01"
+    date: "2018-08-01",
+    itunes:
+      "https://itunes.apple.com/jp/album/fly-to-the-future/1413043675?i=1413043676&uo=4"
   },
   {
     title: "THE WORLD IS MINE",
     album: "FLY TO THE FUTURE",
     singers: ["寿嶺二", "黒崎蘭丸", "美風藍", "カミュ"],
     group: "QUARTET NIGHT",
-    date: "2018-08-01"
+    date: "2018-08-01",
+    itunes:
+      "https://itunes.apple.com/jp/album/the-world-is-mine/1413043675?i=1413043677&uo=4"
   },
   {
     title: "リコリスの森",
