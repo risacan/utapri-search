@@ -1,4 +1,4 @@
-module.exports.utapri = [
+var utapri = [
   {
     title: "FLY TO THE FUTURE",
     album: "FLY TO THE FUTURE",
