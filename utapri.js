@@ -1577,7 +1577,7 @@ var utapri = [
     singers: ["聖川真斗"],
     itunes:
       "https://itunes.apple.com/jp/album/blue-prism-heart/627415916?i=627416233&uo=4",
-    date: "2010-10--27"
+    date: "2010-10-27"
   },
   {
     title: "RED HOT×LOVE MINDS",
@@ -1586,7 +1586,7 @@ var utapri = [
     singers: ["神宮寺レン"],
     itunes:
       "https://itunes.apple.com/jp/album/red-hot-love-minds/627415916?i=627416237&uo=4",
-    date: "2010-10--27"
+    date: "2010-10-27"
   },
   {
     title: "星屑☆Shall we dance？",
