@@ -4,14 +4,18 @@ var utapri = [
     album: "FLY TO THE FUTURE",
     singers: ["寿嶺二", "黒崎蘭丸", "美風藍", "カミュ"],
     group: "QUARTET NIGHT",
-    date: "2018-08-01"
+    date: "2018-08-01",
+    itunes:
+      "https://itunes.apple.com/jp/album/fly-to-the-future/1413043675?i=1413043676&uo=4"
   },
   {
     title: "THE WORLD IS MINE",
     album: "FLY TO THE FUTURE",
     singers: ["寿嶺二", "黒崎蘭丸", "美風藍", "カミュ"],
     group: "QUARTET NIGHT",
-    date: "2018-08-01"
+    date: "2018-08-01",
+    itunes:
+      "https://itunes.apple.com/jp/album/the-world-is-mine/1413043675?i=1413043677&uo=4"
   },
   {
     title: "リコリスの森",
