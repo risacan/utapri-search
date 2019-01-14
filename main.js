@@ -3,7 +3,7 @@ var app = new Vue({
   el: "#app",
   methods: {
     resetFilter: function() {
-      this.songs = utapri;
+      this.songs = sortedUtapri;
       this.checkedNames = [];
       var allLabels = document.getElementsByTagName("label");
       Array.prototype.forEach.call(allLabels, function(item) {
@@ -12,7 +12,7 @@ var app = new Vue({
       this.checked = false;
     },
     filterSongs: function() {
-      var allSongs = utapri;
+      var allSongs = sortedUtapri;
       var filteredSongs = [];
       var checkedNames = this.checkedNames;
       if (this.checked === true) {
@@ -57,7 +57,13 @@ var app = new Vue({
   }
 });
 
-app.songs = utapri;
+var sortedUtapri = utapri
+  .sort(function(a, b) {
+    return new Date(a["date"]) - new Date(b["date"]);
+  })
+  .reverse();
+
+app.songs = sortedUtapri;
 
 function diffArray(arr1, arr2) {
   var newArr = [];
