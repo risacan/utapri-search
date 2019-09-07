@@ -2,5 +2,7 @@
 
 ```
 $ npm install
-$ webpack
+
+TODO: Fix this
+$ ./node_modules/browserify/bin/cmd.js main.js -o bundle.js
 ```
