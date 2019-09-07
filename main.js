@@ -57,6 +57,7 @@ var app = new Vue({
   }
 });
 
+var utapri = require('./node_modules/utapri').songs
 var sortedUtapri = utapri
   .sort(function (a, b) {
     return new Date(a["date"]) - new Date(b["date"]);
