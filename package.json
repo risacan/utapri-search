@@ -5,6 +5,7 @@
   "author": "risacan",
   "license": "MIT",
   "dependencies": {
+    "utapri": "^1.0.1",
     "vue": "^2.5.13"
   }
 }
