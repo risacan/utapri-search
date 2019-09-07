@@ -2,27 +2,27 @@ Vue.config.devtools = true;
 var app = new Vue({
   el: "#app",
   methods: {
-    resetFilter: function() {
+    resetFilter: function () {
       this.songs = sortedUtapri;
       this.checkedNames = [];
       var allLabels = document.getElementsByTagName("label");
-      Array.prototype.forEach.call(allLabels, function(item) {
+      Array.prototype.forEach.call(allLabels, function (item) {
         item.classList.remove("active");
       });
       this.checked = false;
     },
-    filterSongs: function() {
+    filterSongs: function () {
       var allSongs = sortedUtapri;
       var filteredSongs = [];
       var checkedNames = this.checkedNames;
       if (this.checked === true) {
-        var selectedSingers = checkedNames.sort(function(a, b) {
+        var selectedSingers = checkedNames.sort(function (a, b) {
           if (a < b) return -1;
           if (a > b) return 1;
           return 0;
         });
-        allSongs.forEach(function(val) {
-          var sortedSingers = val.singers.sort(function(a, b) {
+        allSongs.forEach(function (val) {
+          var sortedSingers = val.singers.sort(function (a, b) {
             if (a < b) return -1;
             if (a > b) return 1;
             return 0;
@@ -34,7 +34,7 @@ var app = new Vue({
         });
         this.songs = filteredSongs;
       } else {
-        allSongs.forEach(function(val) {
+        allSongs.forEach(function (val) {
           var baseLength = val.singers.length;
           var diffLength = diffArray(val.singers, checkedNames).length;
           if (diffLength == baseLength - checkedNames.length) {
@@ -44,7 +44,7 @@ var app = new Vue({
         this.songs = filteredSongs;
       }
     },
-    changeColor: function() {
+    changeColor: function () {
       var eventElement = event.srcElement;
       var eventLabel = eventElement.parentNode;
       eventLabel.classList.toggle("active");
@@ -58,7 +58,7 @@ var app = new Vue({
 });
 
 var sortedUtapri = utapri
-  .sort(function(a, b) {
+  .sort(function (a, b) {
     return new Date(a["date"]) - new Date(b["date"]);
   })
   .reverse();
