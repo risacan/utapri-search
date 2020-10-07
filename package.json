@@ -5,7 +5,7 @@
   "author": "risacan",
   "license": "MIT",
   "dependencies": {
-    "browserify": "^16.5.0",
+    "browserify": "^16.5.2",
     "utapri": "^1.0.2",
     "vue": "^2.6.11"
   }
